@@ -1,0 +1,64 @@
+@import "tailwindcss";
+.hero {
+  animation: upDown 2s ease-in-out infinite;
+  box-shadow: 5px 5px 100px #00bcff;
+  border-radius: 5%;
+  -webkit-border-radius: 5%;
+  -moz-border-radius: 5%;
+  -ms-border-radius: 5%;
+  -o-border-radius: 5%;
+  -webkit-animation: upDown 2s ease-in-out infinite;
+}
+
+@keyframes upDown {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-20px); /* move up */
+  }
+}
+
+.about-img{
+  animation: upDown 2s ease-in-out infinite;
+  -webkit-animation: upDown 2s ease-in-out infinite;
+  box-shadow: 5px 5px 100px #00bcff;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+}
+@keyframes upDown {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-20px); /* move up */
+  }
+}
+
+@keyframes float1 {
+  0%, 100% { transform: translate(0, 0); }
+  50% { transform: translate(20px, 20px); }
+}
+
+@keyframes float2 {
+  0%, 100% { transform: translate(0, 0); }
+  50% { transform: translate(-15px, 15px); }
+}
+
+@keyframes float3 {
+  0%, 100% { transform: translate(0, 0); }
+  50% { transform: translate(0, -20px); }
+}
+
+.animate-float1 { animation: float1 8s ease-in-out infinite; }
+.animate-float2 { animation: float2 10s ease-in-out infinite; }
+.animate-float3 { animation: float3 12s ease-in-out infinite; }
+
+.orb {
+  transform: translate(-50%, -50%);
+  opacity: 0.3;
+  transition: transform 0.1s ease-out;
+}
